@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>张馨洁 Xinjie Zhang｜作品集 Portfolio 2026</title>
 <meta name="description" content="张馨洁 · AI 应用实践者 × 创作者。宁波诺丁汉大学计算机科学（人工智能方向）。把想法变成可以被体验、被理解，也能继续迭代的作品。" />
+<meta property="og:title" content="张馨洁 Xinjie Zhang｜作品集 2026" />
+<meta property="og:description" content="AI 应用实践者 × 创作者。把想法变成可以被体验、被理解，也能继续迭代的作品。" />
+<meta property="og:type" content="website" />
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,11 +18,15 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">XINJIE ZHANG <span class="zh">／ 作品集 2026</span><span class="en">／ PORTFOLIO 2026</span></a>
+    <a class="brand" href="index.html">
+      <img class="brand-seal" src="assets/img/ornament/seal.svg" alt="" />
+      XINJIE ZHANG <span class="brand-sub zh">／ 作品集 2026</span><span class="brand-sub en">／ PORTFOLIO 2026</span>
+    </a>
     <nav class="nav">
       <div class="nav-links">
         <a href="#work"><span class="zh">作品</span><span class="en">Work</span></a>
         <a href="#about"><span class="zh">关于</span><span class="en">About</span></a>
+        <a href="#archive"><span class="zh">更多创作</span><span class="en">Archive</span></a>
         <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
       </div>
       <button class="lang-toggle" type="button" data-lang-switch>中 / EN</button>
@@ -31,44 +38,53 @@
 <main>
 
   <!-- 01 HERO -->
-  <section class="hero framed" id="top">
+  <section class="section hero framed" id="top">
     <div class="wrap">
       <div class="hero-text">
-        <p class="eyebrow">01 / <span class="zh">首屏</span><span class="en">Intro</span></p>
+        <p class="hero-kicker">
+          <img class="seal" src="assets/img/ornament/seal.svg" alt="张馨洁 印章" />
+          <span class="k zh">个人作品集 · 二〇二六</span><span class="k en">PORTFOLIO · 2026</span>
+        </p>
         <p class="hero-quote">
           <span class="zh">我把想法变成<br />可以被体验、被理解，<br />也能继续迭代的作品。</span>
           <span class="en">I turn ideas into work<br />people can experience, understand,<br />and keep improving.</span>
         </p>
-        <p class="hero-role"><span class="zh">张馨洁 · AI 应用实践者 × 创作者</span><span class="en">Xinjie Zhang · AI Practitioner × Creator</span></p>
+        <p class="hero-name">
+          <span class="n zh">张馨洁 Xinjie Zhang</span><span class="n en">Xinjie Zhang</span>
+          <span class="role zh">AI 应用实践者 × 创作者</span><span class="role en">AI Practitioner × Creator</span>
+        </p>
         <p class="hero-sub">
-          <span class="zh">宁波诺丁汉大学计算机科学（人工智能方向）本科生。我关注 AI 如何真正参与创作和解决问题，也持续探索游戏、视频、视觉设计、播客与写作。</span>
+          <span class="zh">宁波诺丁汉大学计算机科学（人工智能方向）本科生。关注 AI 如何真正参与创作和解决问题，也持续探索游戏、视频、视觉设计、播客与写作。</span>
           <span class="en">Computer Science with Artificial Intelligence undergraduate at the University of Nottingham Ningbo China. I explore how AI can support real creative work and problem-solving across games, video, visual design, podcasts, and writing.</span>
         </p>
         <div class="hero-actions">
-          <a class="btn-link" href="#work"><span class="zh">浏览作品 →</span><span class="en">View My Work →</span></a>
-          <a class="btn-ghost" href="#contact"><span class="zh">联系我</span><span class="en">Contact Me</span></a>
+          <a class="link-arrow" href="#work"><span class="zh">浏览作品 →</span><span class="en">View My Work →</span></a>
+          <a class="link-plain" href="#contact"><span class="zh">联系我</span><span class="en">Contact Me</span></a>
         </div>
       </div>
-      <figure class="portrait">
-        <img src="assets/img/portrait.jpg" width="1600" height="1200"
-             alt="张馨洁，手持诺丁汉大学暑期课程代表证" />
-        <figcaption>Creator · Builder · Learner</figcaption>
-      </figure>
+      <div class="portrait">
+        <figure>
+          <img src="assets/img/portrait.jpg" width="1600" height="1200"
+               alt="张馨洁，手持诺丁汉大学暑期课程代表证" />
+          <figcaption>Creator · Builder · Learner</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- 02 ABOUT -->
-  <section id="about">
+  <section class="section about" id="about">
+    <span class="bg-ink bg-figure" aria-hidden="true"></span>
     <div class="wrap">
-      <p class="eyebrow">02 / About</p>
+      <p class="section-index"><span class="n">02</span> &nbsp;/&nbsp; ABOUT</p>
       <h2 class="display">
         <span class="zh">创作者，是我最认可的身份。</span>
         <span class="en">The identity I value most is being a creator.</span>
       </h2>
-      <hr class="rule" />
+      <div class="head-rule"></div>
       <div class="about-grid">
         <div class="about-body">
-          <p>
+          <p class="strong">
             <span class="zh">我喜欢从一个模糊念头出发，理解问题、搭出结构，再通过 AI、代码和内容工具，把它做成真实作品。比起只完成一项任务，我更享受这个过程。</span>
             <span class="en">I enjoy starting with an unfinished idea, understanding the problem, shaping a structure, and using AI, code, and creative tools to turn it into something real. Rather than simply completing a task, I value that process.</span>
           </p>
@@ -84,48 +100,47 @@
           </div>
           <div>
             <p class="label">Now</p>
-            <p class="val"><span class="zh">学习技术，也持续创作</span><span class="en">Learning the tech, and still creating</span></p>
+            <p class="val"><span class="zh">学习技术，也持续创作</span><span class="en">Learning the craft, and still creating</span></p>
           </div>
           <div>
             <p class="label">Base</p>
             <p class="val"><span class="zh">宁波诺丁汉大学 · 计算机科学（人工智能方向）</span><span class="en">University of Nottingham Ningbo China · CS with AI</span></p>
           </div>
-          <img class="about-ink" src="assets/img/ink-portrait.jpg" alt="" aria-hidden="true" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- 03 FEATURED -->
-  <section id="work">
+  <section class="section featured" id="work">
     <div class="wrap">
-      <p class="eyebrow">03 / Selected Work</p>
+      <p class="section-index"><span class="n">03</span> &nbsp;/&nbsp; SELECTED WORK</p>
       <h2 class="display">
         <span class="zh">四个正在生长的实践。</span>
         <span class="en">Four practices, still growing.</span>
       </h2>
-      <hr class="rule" />
-      <div class="work-grid">
-        <a class="work-card" href="projects/furniture-chatbot.html">
-          <span class="cat">01 / AI Product</span>
+      <div class="head-rule"></div>
+      <div class="work-list">
+        <a class="work-item" href="projects/furniture-chatbot.html">
+          <span class="no">01 · AI PRODUCT</span>
           <h3><span class="zh">家具智能导购 Chatbot</span><span class="en">Furniture Shopping Assistant Chatbot</span></h3>
           <p class="desc"><span class="zh">真实产品信息 · 场景设计 · 幻觉测试</span><span class="en">Real product data · scenario design · hallucination testing</span></p>
           <span class="go"><span class="zh">查看项目 →</span><span class="en">View project →</span></span>
         </a>
-        <a class="work-card" href="projects/mirror-test.html">
-          <span class="cat">02 / AI Game</span>
+        <a class="work-item" href="projects/mirror-test.html">
+          <span class="no">02 · AI GAME</span>
           <h3><span class="zh">《镜中人测试》</span><span class="en">Mirror Test</span></h3>
           <p class="desc"><span class="zh">30 小时 Game Jam · 持续优化中</span><span class="en">30-hour game jam · ongoing improvements</span></p>
           <span class="go"><span class="zh">查看项目 →</span><span class="en">View project →</span></span>
         </a>
-        <a class="work-card" href="projects/polaris-practice.html">
-          <span class="cat">03 / AI Practice</span>
+        <a class="work-item" href="projects/polaris-practice.html">
+          <span class="no">03 · AI PRACTICE</span>
           <h3><span class="zh">北辰青年四周 AI 实践</span><span class="en">Four-Week AI Practice with Polaris Youth</span></h3>
           <p class="desc"><span class="zh">洞察 · 招募物料 · 个人操作系统</span><span class="en">Insight · recruitment materials · a personal operating system</span></p>
           <span class="go"><span class="zh">查看项目 →</span><span class="en">View project →</span></span>
         </a>
-        <a class="work-card" href="projects/job-workflow.html">
-          <span class="cat">04 / Workflow</span>
+        <a class="work-item" href="projects/job-workflow.html">
+          <span class="no">04 · WORKFLOW</span>
           <h3><span class="zh">求职面试 AI Skill / 工作流</span><span class="en">AI Skill &amp; Workflow for Job Applications</span></h3>
           <p class="desc"><span class="zh">证据整理 · 岗位匹配 · 事实核验</span><span class="en">Evidence · role matching · fact-checking</span></p>
           <span class="go"><span class="zh">查看项目 →</span><span class="en">View project →</span></span>
@@ -135,18 +150,19 @@
         <span class="zh">点击任一项目，查看为什么做、我做了什么、AI 帮了什么，以及我负责的判断。</span>
         <span class="en">Open any project to see why I made it, what I did, how AI helped, and what I decided.</span>
       </p>
+      <img class="brush" src="assets/img/ornament/brush-accent.svg" alt="" />
     </div>
   </section>
 
   <!-- 04 ARCHIVE -->
-  <section id="archive" class="inked">
+  <section class="section archive" id="archive">
     <div class="wrap">
-      <p class="eyebrow">04 / Creative Archive</p>
+      <p class="section-index"><span class="n">04</span> &nbsp;/&nbsp; CREATIVE ARCHIVE</p>
       <h2 class="display">
         <span class="zh">更多创作，不止一种媒介。</span>
         <span class="en">More creative work, across more than one medium.</span>
       </h2>
-      <hr class="rule" />
+      <div class="head-rule"></div>
 
       <div class="archive-filter">
         <button type="button" data-filter="all" class="is-active"><span class="zh">全部</span><span class="en">All</span></button>
@@ -157,71 +173,73 @@
       </div>
 
       <div class="archive-list">
-        <div class="archive-row" data-cat="video">
+        <a class="archive-row" data-cat="video" href="projects/finance-mystery.html">
           <span class="idx">Video / 01</span>
-          <a class="name" href="https://ta-ta-mystery-room.mikedalejayson0101.chatgpt.site/invite/RCTWXP" target="_blank" rel="noopener">
-            <span class="zh">金融题材六人互动剧本杀</span><span class="en">Six-player finance-themed mystery game</span>
-          </a>
+          <span class="name"><span class="zh">金融题材六人互动剧本杀</span><span class="en">Six-player finance-themed mystery game</span></span>
           <span class="meta"><span class="zh">组长协调 · 宣传视频 · 试玩组织 · AI 辅助测试</span><span class="en">Coordination · promo video · playtesting · AI-assisted testing</span></span>
-        </div>
-        <div class="archive-row" data-cat="design">
+          <span class="chev">→</span>
+        </a>
+        <a class="archive-row" data-cat="design" href="https://xhslink.cn/o/7ZqcuuLYZUQ" target="_blank" rel="noopener">
           <span class="idx">Social / 02</span>
-          <a class="name" href="https://xhslink.cn/o/7ZqcuuLYZUQ" target="_blank" rel="noopener">
-            <span class="zh">IMA HO 小红书倒计时招新</span><span class="en">IMA HO Xiaohongshu recruitment campaign</span>
-          </a>
+          <span class="name"><span class="zh">IMA HO 小红书倒计时招新</span><span class="en">IMA HO Xiaohongshu recruitment campaign</span></span>
           <span class="meta"><span class="zh">围绕招新目标制作并发布两篇倒计时笔记</span><span class="en">Two countdown posts created and published</span></span>
-        </div>
-        <div class="archive-row" data-cat="video">
+          <span class="chev">↗</span>
+        </a>
+        <a class="archive-row" data-cat="video" href="https://t.bilibili.com/1207416921573556226" target="_blank" rel="noopener">
           <span class="idx">Video / 03</span>
-          <a class="name" href="https://t.bilibili.com/1207416921573556226" target="_blank" rel="noopener">
-            <span class="zh">《如何做好一周的饭》</span><span class="en">How to Prepare a Week of Meals</span>
-          </a>
+          <span class="name"><span class="zh">《如何做好一周的饭》</span><span class="en">How to Prepare a Week of Meals</span></span>
           <span class="meta"><span class="zh">健身餐方案设计 · 拍摄 · AI 辅助粗剪 · 人工复核</span><span class="en">Meal-plan design · filming · AI-assisted rough cut · manual review</span></span>
-        </div>
-        <div class="archive-row" data-cat="video">
+          <span class="chev">↗</span>
+        </a>
+        <a class="archive-row" data-cat="video" href="https://www.bilibili.com/video/BV1SzJ56rEiY" target="_blank" rel="noopener">
           <span class="idx">Documentary / 04</span>
-          <a class="name" href="https://www.bilibili.com/video/BV1SzJ56rEiY" target="_blank" rel="noopener">
-            <span class="zh">支教记录视频</span><span class="en">Volunteer-teaching documentary</span>
-          </a>
+          <span class="name"><span class="zh">支教记录视频</span><span class="en">Volunteer-teaching documentary</span></span>
           <span class="meta"><span class="zh">剪辑并发布社会实践记录</span><span class="en">Edited and published a record of the programme</span></span>
-        </div>
-        <div class="archive-row" data-cat="video">
+          <span class="chev">↗</span>
+        </a>
+        <a class="archive-row" data-cat="video" href="projects/expert-interview.html">
           <span class="idx">Interview / 05</span>
           <span class="name"><span class="zh">行业专家访谈</span><span class="en">Industry expert interview</span></span>
           <span class="meta"><span class="zh">整理访谈问题 · 独立制作中英文字幕</span><span class="en">Organised questions · independently produced Chinese–English subtitles</span></span>
-        </div>
-        <div class="archive-row" data-cat="sound">
+          <span class="chev">→</span>
+        </a>
+        <a class="archive-row" data-cat="sound" href="projects/xunwei-podcast.html">
           <span class="idx">Podcast / 06</span>
-          <span class="name"><span class="zh">"寻味漫记" 播客</span><span class="en">Flavours in Memory podcast</span></span>
+          <span class="name"><span class="zh">「寻味漫记」播客</span><span class="en">Flavours in Memory podcast</span></span>
           <span class="meta"><span class="zh">中文与英文两个采访主题的策划、主持与剪辑</span><span class="en">Planning, co-hosting and editing for Chinese and English episodes</span></span>
-        </div>
-        <div class="archive-row" data-cat="design">
+          <span class="chev">→</span>
+        </a>
+        <a class="archive-row" data-cat="design" href="projects/recruitment-posters.html">
           <span class="idx">Visual / 07</span>
           <span class="name"><span class="zh">校园行动招募系列海报</span><span class="en">Campus recruitment poster series</span></span>
           <span class="meta"><span class="zh">指挥 AI 制作 8 张海报并逐页核验</span><span class="en">Directed AI to produce eight posters, reviewed every page</span></span>
-        </div>
-        <div class="archive-row" data-cat="writing">
+          <span class="chev">→</span>
+        </a>
+        <a class="archive-row" data-cat="writing" href="projects/llm-course-paper.html">
           <span class="idx">Research / 08</span>
-          <span class="name"><span class="zh">《大模型技术综述与智能导购 Agent 实践》</span><span class="en">A Technical Review of LLMs and a Furniture Shopping Agent in Practice</span></span>
+          <span class="name"><span class="zh">《大模型技术综述与智能导购 Agent 实践》</span><span class="en">A Technical Review of LLMs &amp; a Furniture Shopping Agent in Practice</span></span>
           <span class="meta"><span class="zh">北京大学暑期课程课程论文</span><span class="en">Course paper, Peking University summer programme</span></span>
-        </div>
+          <span class="chev">→</span>
+        </a>
         <div class="archive-row" data-cat="writing">
           <span class="idx">Writing / 09</span>
           <span class="name"><span class="zh">原创写作</span><span class="en">Fiction writing</span></span>
-          <span class="meta"><span class="zh">两本作品：一本未公开稿件，一本曾在线上发表</span><span class="en">Two projects: one unpublished manuscript, one previously published online</span></span>
+          <span class="meta"><span class="zh">两本作品：一本未公开稿件，一本曾在线上发表 · 欢迎邮件联系</span><span class="en">Two projects: one unpublished manuscript, one previously published online · reach me by email</span></span>
+          <span class="chev"></span>
         </div>
       </div>
       <p class="archive-foot">
-        <span class="zh">对原创写作感兴趣？欢迎通过邮箱联系我。</span>
-        <span class="en">Interested in the fiction writing? Feel free to reach me by email.</span>
+        <span class="zh">带 ↗ 的条目会跳转到已公开的作品；带 → 的条目有独立说明页。对原创写作感兴趣，欢迎邮件联系。</span>
+        <span class="en">Items marked ↗ link to published work; items marked → open a dedicated page. Interested in the fiction writing? Reach me by email.</span>
       </p>
     </div>
   </section>
 
   <!-- 05 CONTACT -->
-  <section class="contact framed inked" id="contact">
+  <section class="section contact framed" id="contact">
+    <span class="bg-ink bg-scene" aria-hidden="true"></span>
     <div class="wrap">
-      <p class="eyebrow">05 / Contact</p>
+      <p class="section-index"><span class="n">05</span> &nbsp;/&nbsp; CONTACT</p>
       <h2 class="display">
         <span class="zh">如果你也在把想法变成现实，欢迎来聊聊。</span>
         <span class="en">If you're also turning ideas into reality, let's talk.</span>
@@ -232,7 +250,7 @@
       </p>
       <div class="contact-row">
         <a class="contact-mail" href="mailto:biyxz89@nottingham.edu.cn">biyxz89@nottingham.edu.cn</a>
-        <a class="btn-link" href="mailto:biyxz89@nottingham.edu.cn"><span class="zh">写邮件 →</span><span class="en">Write an email →</span></a>
+        <a class="link-arrow" href="mailto:biyxz89@nottingham.edu.cn"><span class="zh">写邮件 →</span><span class="en">Write an email →</span></a>
       </div>
     </div>
   </section>
@@ -241,9 +259,12 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>
-      <span class="zh">网站中的部分作品由我与 AI 或队友共同完成。每个项目都尽量清楚说明了我的实际参与和判断。</span>
-      <span class="en">Some works on this site were created with AI or teammates. Each project describes my actual contribution and decisions.</span>
+    <span class="fmark">
+      <img src="assets/img/ornament/seal.svg" alt="" />
+      <span>
+        <span class="zh">部分作品由我与 AI 或队友共同完成，每个项目都尽量说明了我的实际参与和判断。</span>
+        <span class="en">Some works were made with AI or teammates; each project describes my actual contribution and decisions.</span>
+      </span>
     </span>
     <span>© 2026 Xinjie Zhang</span>
   </div>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="张馨洁 印章">
+  <rect x="7" y="7" width="86" height="86" rx="10" fill="#a83a2c"/>
+  <rect x="15" y="15" width="70" height="70" rx="6" fill="none" stroke="#f4efe3" stroke-width="3.5"/>
+  <text x="50" y="52" text-anchor="middle" dominant-baseline="central"
+    font-family="'Songti SC','STSong','SimSun','Noto Serif SC',serif" font-weight="700" font-size="44" fill="#f4efe3">馨</text>
+</svg>
