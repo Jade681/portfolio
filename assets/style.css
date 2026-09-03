@@ -190,7 +190,7 @@ img { display: block; max-width: 100%; }
 }
 .framed > .wrap { position: relative; z-index: 2; }
 
-/* faded ink illustration as sectional atmosphere (each used once) */
+/* ink illustration as a visible sectional element (each used once) */
 .bg-ink {
   position: absolute;
   pointer-events: none;
@@ -199,18 +199,19 @@ img { display: block; max-width: 100%; }
 }
 .bg-figure {
   top: 0; right: 0; height: 100%;
-  width: min(40%, 380px);
+  width: min(46%, 460px);
   background: url("img/ink-portrait.jpg") right center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to left, #000 8%, transparent 82%);
-  mask-image: linear-gradient(to left, #000 8%, transparent 82%);
-  opacity: 0.12;
+  -webkit-mask-image: linear-gradient(to left, #000 62%, transparent 99%);
+  mask-image: linear-gradient(to left, #000 62%, transparent 99%);
+  opacity: 0.62;
 }
 .bg-scene {
-  inset: 0;
-  background: url("img/ink-cover.jpg") center 30% / cover no-repeat;
-  -webkit-mask-image: radial-gradient(120% 90% at 78% 40%, #000 0%, transparent 72%);
-  mask-image: radial-gradient(120% 90% at 78% 40%, #000 0%, transparent 72%);
-  opacity: 0.12;
+  top: 0; right: 0; height: 100%;
+  width: min(58%, 620px);
+  background: url("img/ink-cover.jpg") center 32% / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to left, #000 55%, transparent 98%);
+  mask-image: linear-gradient(to left, #000 55%, transparent 98%);
+  opacity: 0.5;
 }
 
 /* ---------- hero ---------- */
@@ -341,15 +342,19 @@ img { display: block; max-width: 100%; }
 
 /* ---------- about ---------- */
 .about { overflow: hidden; }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: clamp(30px, 6vw, 76px);
-  align-items: start;
-}
-.about-body p { margin: 0 0 22px; max-width: 50ch; color: var(--ink-2); }
+.about-grid { display: block; }
+.about-body { max-width: 52ch; }
+.about-body p { margin: 0 0 22px; color: var(--ink-2); }
 .about-body p.strong { color: var(--ink); font-size: 1.06em; }
-.about-meta { display: grid; gap: 26px; padding-top: 4px; }
+.about-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 56px;
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  max-width: 60ch;
+}
 .about-meta .label {
   font-size: 11px;
   letter-spacing: 0.24em;
@@ -358,7 +363,7 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
   margin: 0 0 6px;
 }
-.about-meta .val { margin: 0; font-size: 14.5px; color: var(--ink); }
+.about-meta .val { margin: 0; font-size: 14.5px; color: var(--ink); max-width: 28ch; }
 
 /* ---------- featured ---------- */
 .featured { position: relative; }
@@ -478,11 +483,11 @@ a.archive-row:hover .chev { color: var(--gold); transform: translateX(3px); }
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 16px 28px;
+  gap: 14px 36px;
   margin-top: 40px;
   padding-top: 24px;
   border-top: 1px solid var(--line-2);
+  max-width: 46ch;
 }
 .contact-mail {
   font-family: var(--serif);
@@ -561,6 +566,47 @@ a.archive-row:hover .chev { color: var(--gold); transform: translateX(3px); }
   background: var(--paper-sink);
 }
 
+/* media on detail pages */
+.media { margin-top: clamp(26px, 4vh, 42px); }
+.media video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #17150f;
+  border: 1px solid var(--line-2);
+}
+.media .pdf-embed {
+  width: 100%;
+  height: min(78vh, 900px);
+  border: 1px solid var(--line-2);
+  background: var(--paper-sink);
+  margin-top: 14px;
+}
+.media-cap { margin: 12px 0 0; font-size: 12.5px; color: var(--ink-3); letter-spacing: 0.02em; }
+.audio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.audio-item:first-child { border-top: 1px solid var(--line-2); }
+.audio-item .a-label {
+  font-family: var(--serif);
+  font-size: 14.5px;
+  font-weight: 600;
+  margin: 0;
+}
+.audio-item .a-label .sub {
+  font-family: var(--sans);
+  color: var(--ink-3);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin-left: 10px;
+}
+.audio-item audio { width: 100%; }
+
 .detail-nav {
   margin-top: clamp(38px, 6vh, 64px);
   display: flex;
@@ -588,7 +634,8 @@ a.archive-row:hover .chev { color: var(--gold); transform: translateX(3px); }
   .archive-row .chev { grid-column: 2; grid-row: 1; }
   .archive-row .name { grid-column: 1 / -1; }
   .archive-row .meta { grid-column: 1 / -1; }
-  .bg-figure { width: 62%; opacity: 0.1; }
+  .bg-figure { width: min(66%, 300px); opacity: 0.5; }
+  .bg-scene { width: min(78%, 360px); opacity: 0.42; }
 
   .nav-links {
     position: fixed;
