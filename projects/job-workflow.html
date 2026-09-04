@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>求职面试 AI Skill / 工作流｜张馨洁 Xinjie Zhang</title>
-<meta name="description" content="把岗位分析、个人证据、简历匹配和面试官视角检查整理成一套可重复使用的求职流程。" />
+<meta name="description" content="把「看懂岗位 → 匹配经历 → 判断是否申请 → 定向简历 → 预测面试 → 面试后复盘归档」做成一套可对不同岗位反复运行的方法，由求职副驾和面试官视角两个 Skill 衔接而成。" />
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,46 +40,85 @@
       <span class="cat">04 · Workflow</span>
       <h1><span class="zh">求职面试 AI Skill / 工作流</span><span class="en">AI Skill and Workflow for Job Applications and Interviews</span></h1>
       <p class="lede">
-        <span class="zh">把岗位分析、个人证据、简历匹配和面试官视角检查整理成一套可重复使用的求职流程。</span>
-        <span class="en">A repeatable workflow connecting role analysis, personal evidence, résumé matching, and interviewer-perspective review.</span>
+        <span class="zh">把「看懂岗位 → 匹配我的经历 → 判断是否申请 → 准备自我介绍和定向简历 → 预测面试题 → 面试后复盘归档」这一整条求职链路，做成一套可以对不同岗位反复运行的方法。它由两个相互衔接的 Skill 组成：「求职副驾」负责整理和判断，「面试官视角」负责独立评估。</span>
+        <span class="en">A method that runs the whole job-search chain — read the role, match my evidence, decide whether to apply, prepare an introduction and a role-specific résumé, predict interview questions, then debrief and archive — repeatably across different roles. It is built from two connected Skills: a job-application co-pilot that organises and judges, and an independent interviewer layer that assesses.</span>
       </p>
-      
+      <div class="detail-actions">
+        <a class="link-arrow" href="https://github.com/Jade681/my-flask-website/tree/main/workflow" target="_blank" rel="noopener"><span class="zh">在 GitHub 上查看完整工作流 →</span><span class="en">See the full workflow on GitHub →</span></a>
+      </div>
     </div>
 
     <div class="qa">
       <div class="qa-item">
         <h2><span class="zh">为什么做</span><span class="en">Why I made it</span></h2>
         <p>
-          <span class="zh">求职信息分散、判断步骤多，也很容易把 AI 的推测误当成事实。我希望建立一套既能提高效率、又能保证表达真实的流程。</span>
-          <span class="en">Job-search information is fragmented and requires many judgement calls. It is also easy to mistake AI inference for fact. I wanted a process that improved efficiency while keeping every claim accurate.</span>
+          <span class="zh">求职信息很分散，判断步骤又多——看 JD、对经历、改简历、准备面试、面试后复盘，每一步都容易出错，也很容易把 AI 的推测当成事实写进简历。我想要一套既能省时间、又能守住「每句话都有出处」的流程，而且换一个岗位还能重新跑。</span>
+          <span class="en">Job-search information is scattered and the process has many judgement calls — reading the JD, matching experience, editing the résumé, preparing for interviews, debriefing afterwards. Each step is easy to get wrong, and it is easy to let AI inference slip into the résumé as fact. I wanted a process that saved time while keeping every sentence traceable to a source, and that I could re-run for a different role.</span>
         </p>
       </div>
       <div class="qa-item">
         <h2><span class="zh">我做了什么</span><span class="en">What I did</span></h2>
         <p>
-          <span class="zh">我整理个人经历与证据，拆解岗位要求和匹配关系，建立简历事实核验流程，加入面试官视角检查，并把反复使用的方法沉淀为 Skill 和工作流。</span>
-          <span class="en">I organised personal experiences and evidence, broke down role requirements and their matches, created a fact-checking process for résumé content, added an interviewer-perspective review, and turned repeated methods into a reusable Skill and workflow.</span>
+          <span class="zh">我把整条链路拆成明确的步骤，定下「用户确认 > 原始材料 > 证据笔记 > AI 推断」的取信顺序，规定母简历只作事实源、不被覆盖，每份定向简历单独出文件。我建了简历事实核验流程，又加了「面试官视角」这一层——它可以独立建岗位评分卡、出题、逐题追问、给候选人反馈。最后把这些方法沉淀成两个可复用的 Skill，并接上面试后复盘和知识库归档。</span>
+          <span class="en">I broke the chain into explicit steps and fixed a source hierarchy — user-confirmed facts > original artifacts > evidence notes > AI inference. The master résumé is a fact source that is never overwritten; every targeted résumé is a separate file. I built a résumé fact-check pass and added an interviewer layer that can independently build a role scorecard, write questions, probe answer by answer, and give candidate feedback. Both were turned into reusable Skills, connected to a post-interview debrief and an archive step in my knowledge base.</span>
         </p>
       </div>
       <div class="qa-item">
         <h2><span class="zh">AI 帮了什么</span><span class="en">How AI helped</span></h2>
         <p>
-          <span class="zh">AI 辅助提取信息、整理结构、对照岗位和执行重复检查。</span>
-          <span class="en">AI supported information extraction, structuring, role comparison, and repetitive checks.</span>
+          <span class="zh">AI 负责按流程执行：拆解 JD、在材料里检索证据、把要求和经历做成对照表、生成定向简历草稿和自我介绍、预测面试题、在模拟面试里扮演面试官。</span>
+          <span class="en">AI runs the steps: breaking down the JD, searching my materials for evidence, building a requirement-to-evidence table, drafting the targeted résumé and self-introduction, predicting interview questions, and playing the interviewer in a mock interview.</span>
         </p>
       </div>
       <div class="qa-item">
         <h2><span class="zh">我负责的判断</span><span class="en">What I decided</span></h2>
         <p>
-          <span class="zh">我确认事实是否真实、哪些经历可以使用、哪些说法属于过度推断，并决定最终的简历表达和求职策略。</span>
-          <span class="en">I verified facts, decided which experiences were relevant, identified overstatements, and made the final decisions on résumé wording and job-search strategy.</span>
+          <span class="zh">我定义每一步要产出什么、取信顺序怎么排；确认哪些是事实、哪些是过度推断；决定哪些经历能用、简历最终怎么写、要不要申请这个岗位。流程能提速，判断和最终结果由我负责。</span>
+          <span class="en">I define what each step must produce and how the source hierarchy is ordered; I decide what is fact and what is over-inference; I decide which experiences are usable, how the résumé is finally worded, and whether to apply. The process speeds things up; the judgement and the final result are mine.</span>
         </p>
       </div>
     </div>
 
+    <h2 class="flow-head"><span class="zh">工作流的样子</span><span class="en">How the workflow runs</span></h2>
+    <p class="flow-intro"><span class="zh">给一份真实的 JD，「求职副驾」会依次跑完下面八步，产出一份可追溯的求职准备文档；真实笔试或面试阶段再调用「面试官视角」。</span><span class="en">Given a real job description, the co-pilot runs these eight steps into one traceable preparation document; the interviewer layer is called for the real written-test or interview stage.</span></p>
+    <ol class="flow">
+      <li>
+        <div><h3><span class="zh">看懂岗位</span><span class="en">Read the role</span></h3>
+        <p><span class="zh">把 JD 拆成「显性事实」和「需要推断的部分」：这个岗位到底解决什么问题、最重要的三项能力、必须满足的硬条件、面试大概会考什么。每条结论都贴一小段 JD 原文，再写出从原文到结论的推理；没有原文支撑的就标成推断或未知。</span><span class="en">Split the JD into explicit facts and interpretation: what problem the role solves, its three most important capabilities, the must-have conditions, and what the interview will likely test. Every conclusion carries a short verbatim JD excerpt and the reasoning from it; anything unsupported is labelled inference or unknown.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">匹配我的经历</span><span class="en">Match my evidence</span></h3>
+        <p><span class="zh">在母简历和个人材料里找具体证据，对每条岗位要求标「强 / 部分 / 弱 / 缺失」，并对每段经历分清是我做的、队友做的、还是 AI 做的。不把性格标签当证据。</span><span class="en">Search the master résumé and personal materials for concrete evidence, rate each requirement strong / partial / weak / missing, and separate my contribution from teammates' and AI's for every experience. Personality labels don't count as proof.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">判断优势与缺口</span><span class="en">Advantages and gaps</span></h3>
+        <p><span class="zh">把能力分成三类：有真实经历能证明的、自己以为有但证据不足的、目前明显缺的。每个缺口都配三条：投递前怎么补、面试前准备什么证据、补不齐时怎么诚实说。</span><span class="en">Sort abilities into three groups — proven by real experience, believed-but-under-evidenced, and clear current gaps. Each gap gets three lines: how to strengthen it before applying, what evidence to prepare before the interview, and how to state it honestly if it can't be closed in time.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">判断是否值得申请</span><span class="en">Decide whether to apply</span></h3>
+        <p><span class="zh">做双向匹配：招聘方为什么可能选我 / 为什么可能不选，这个岗位对我的价值 / 风险和代价。给出建议和适用条件，但不用一个「匹配分数」当结论，也不替我做决定。</span><span class="en">A two-way fit check: why the employer might pick me and why they might not; the role's value to me and its risks and costs. It gives a recommendation with conditions, but never reduces the decision to a match score and never decides for me.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">准备自我介绍</span><span class="en">Prepare the introduction</span></h3>
+        <p><span class="zh">按场景和听众，用 FAB（特征 / 优势 / 对听众的价值）挑 2–3 个有证据的点，做 1 分钟、2 分钟、3 分钟三个版本，并说明每个版本侧重什么、比上一版多讲了什么。</span><span class="en">Using FAB (Feature / Advantage / Benefit) and picking two or three evidence-backed points for the audience, it drafts one-, two- and three-minute versions and explains what each emphasises and what the longer one adds.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">生成定向简历</span><span class="en">Generate the targeted résumé</span></h3>
+        <p><span class="zh">从母简历里已核实的事实中挑选、重排，生成一份针对这个岗位的简历（母简历不被改写，定向简历单独成文件）。每条 bullet 追溯到证据来源，不编造指标、头衔、日期、技术或归属；有公开链接的作品用可点击链接。附一份「改动说明」：留了什么、删了什么、为什么。</span><span class="en">It selects and reorders verified facts from the master résumé into a role-specific résumé (the master is never rewritten; the targeted one is its own file). Every bullet traces to a source; no invented metrics, titles, dates, technologies or ownership; works with a public link get a clickable link. A change log records what was kept, cut and why.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">预测面试题</span><span class="en">Predict interview questions</span></h3>
+        <p><span class="zh">从排过序的要求和证据弱点里预测十个高概率问题，不套题库。每题标：考察什么、我可以用哪段经历、可能的追问、目前的准备缺口。</span><span class="en">From the ranked requirements and evidence weaknesses it predicts ten likely questions — not from a generic bank. Each is tagged with what it assesses, which experience I can use, the likely follow-up, and my current preparation gap.</span></p></div>
+      </li>
+      <li>
+        <div><h3><span class="zh">练习与复盘</span><span class="en">Practise and debrief</span></h3>
+        <p><span class="zh">两种模式：教练式逐题演练（一次一题，答完给反馈和更好的版本）；真实模拟（交给「面试官视角」那一层，过程中不指导、不给标准答案，结束后统一评估）。真实投递或面试之后做结构化复盘，把新确认的事实加进个人证据库，只有真正能改进以后决策的经验才写回方法本身，最后整个周期归档进知识库。</span><span class="en">Two modes: a coached one-question-at-a-time drill (feedback and a stronger version after each answer), and a realistic simulation handed to the interviewer layer (no coaching, no model answers during it, one consolidated assessment at the end). After a real application or interview, a structured debrief adds newly confirmed facts to the evidence bank; only lessons that improve future decisions are written back into the method, and the whole cycle is archived in my knowledge base.</span></p></div>
+      </li>
+    </ol>
+
     <div class="detail-note">
-      <span class="zh">展示的是方法和流程；个人履历库与完整面试记录不公开。</span>
-      <span class="en">This shows the method and the workflow; the private evidence library and full interview records are not published.</span>
+      <span class="zh">「面试官视角」也能单独用——比如社团招新、项目选人。它会先建岗位评分卡，再分「岗位统一题」和「针对候选人材料的定制题」两层，逐题追问，最后按「观察到的证据 → 对这个岗位的影响 → 可执行的下一步」给候选人反馈，并以采访方式帮面试官复盘。展示的是方法和流程；我的个人履历库与完整面试记录不公开。</span>
+      <span class="en">The interviewer layer also works on its own — for club recruitment or picking a project team, say. It builds a role scorecard, splits questions into a shared role core and candidate-specific checks, probes answer by answer, then gives candidate feedback in the form observed evidence → impact on this role → a concrete next step, and debriefs the interviewer afterwards. This page shows the method; my private evidence library and full interview records are not published.</span>
     </div>
 
     <nav class="detail-nav">

@@ -1,0 +1,4 @@
+interface:
+  display_name: "真实面试官"
+  short_description: "按岗位设计真实评估、逐题面试、候选人反馈与面试官复盘"
+  default_prompt: "Use $job-interviewer to design and run a realistic evidence-based interview, then prepare role-specific candidate feedback."
