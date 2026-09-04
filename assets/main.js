@@ -16,6 +16,12 @@
 
   var saved = "zh";
   try { saved = localStorage.getItem(KEY) || "zh"; } catch (e) {}
+  // ?lang=en / ?lang=zh (or #lang=en) in the URL wins — lets the résumé deep-link
+  // to the matching language. apply() then persists it for later navigation.
+  try {
+    var q = (location.search + " " + location.hash).match(/[?#&]lang=(en|zh)\b/i);
+    if (q) saved = q[1].toLowerCase();
+  } catch (e) {}
   apply(saved);
 
   document.addEventListener("click", function (e) {
