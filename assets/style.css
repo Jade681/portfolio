@@ -243,14 +243,6 @@ img { display: block; max-width: 100%; }
   z-index: 0;
 }
 .portrait figure { position: relative; z-index: 1; margin: 0; }
-.portrait .leaf {
-  position: absolute;
-  left: -26px; bottom: -22px;
-  width: 46px; height: 46px;
-  transform: rotate(-8deg);
-  opacity: 0.95;
-  z-index: 2;
-}
 .portrait figcaption {
   position: absolute;
   right: 12px; bottom: 12px;
@@ -679,10 +671,9 @@ a.archive-row:hover .chev { color: var(--gold); transform: translateX(3px); }
   .portrait::before { inset: -12px -10px -14px -14px; opacity: 0.3; }
   .portrait figcaption {
     position: static; writing-mode: horizontal-tb;
-    margin-top: 14px; padding-left: 34px; letter-spacing: 0.22em;
+    margin-top: 14px; letter-spacing: 0.22em;
     color: var(--ink-3); text-shadow: none;
   }
-  .portrait .leaf { left: -10px; bottom: -13px; width: 32px; height: 32px; }
   .about-grid { grid-template-columns: 1fr; gap: 34px; }
   .work-list { grid-template-columns: 1fr; }
   .work-item, .work-item:nth-child(odd), .work-item:nth-child(even) {
